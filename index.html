@@ -232,8 +232,8 @@
         }
 
         let currentAttempts = parseInt(localStorage.getItem("attempts_" + phone) || "0", 10);
-        if (currentAttempts >= 2) {
-            errorMsg.innerText = "You have reached the maximum limit of 2 attempts for this test.";
+        if (currentAttempts >= 4) {
+            errorMsg.innerText = "You have reached the maximum limit of 4 attempts for this test.";
             return;
         }
 
